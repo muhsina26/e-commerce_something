@@ -1,26 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:lab7/screens/home/pages/home.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const FreebeesEcom());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  // This widget is the root of your application.
+class FreebeesEcom extends StatelessWidget {
+  const FreebeesEcom({super.key});
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text("HELL"),
-        
-        ),
-        body: const Center(
-          child: 
-        Text("Welcome to HELL after mid!"),)
-      ),
-
+      title: "Freebees E-com",
+      home: Home(),
     );
   }
 }

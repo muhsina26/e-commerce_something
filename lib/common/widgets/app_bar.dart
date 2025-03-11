@@ -3,21 +3,23 @@ import 'package:icons_plus/icons_plus.dart';
 import 'package:lab7/utils/const/colors.dart';
 
 class FAppBar extends StatelessWidget implements PreferredSizeWidget {
-  const FAppBar({
-    super.key,
-    required this.title,
-    required this.firsticon,
-    this.secondIcon=IonIcons.cart
-  });
+  const FAppBar(
+      {super.key,
+      required this.title,
+      required this.firsticon,
+      this.backButton=false,
+      this.secondIcon = IonIcons.cart});
 
   final String title;
   final IconData firsticon;
   final IconData secondIcon;
-
+  final bool backButton;
 
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      
+      leading:backButton? Icon(Iconsax.arrow_left_2_outline):null,
       title: Text(
         title,
         style: TextStyle(

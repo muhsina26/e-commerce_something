@@ -32,7 +32,7 @@ class FBottomBar extends StatelessWidget {
         ),
         BottomNavigationBarItem(
           icon: Icon(Iconsax.profile_add_outline),
-          label: "Login",
+          label: "Loginnn",
         ),
       ],
     );
